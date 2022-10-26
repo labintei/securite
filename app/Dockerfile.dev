@@ -1,0 +1,10 @@
+FROM node:16-alpine
+
+RUN npm install -g npm@latest
+
+WORKDIR /app
+
+CMD ["sh", "-c", "                                          \
+  echo '********** Frontend NPM installation... **********' \
+  && npm install                                            \
+  && npm run start"]

@@ -1,0 +1,113 @@
+#level-list, #level-list p, #level-list h3 {
+list-style: none;
+margin:0; padding:0;
+}
+#level-list {
+height: 480px;
+}
+
+span {
+    width: 16px;
+    height: 16px;
+    border-radius: 5em;
+    display: block;
+    border: 1px solid rgb(3, 3, 3);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(192, 192, 192);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span.Offline {
+    background-color: rgb(192, 192, 192);
+}
+
+span.Online {
+    background-color: rgb(21, 255, 0);
+}
+
+span.Playing {
+    background-color: rgb(255, 94, 0);
+}
+
+#level-list > li{
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: auto;
+border-radius: 34px;
+border: none;
+min-width: 400px;
+width: 60%;
+max-width: 80%;
+align-content: center;
+height: 64px;
+display:flex;
+}
+
+#level-list .low-rank {
+    background-color: rgb(0, 160, 112);
+}
+#level-list .bronze-rank, #level-list .silver-rank, #level-list .gold-rank {
+    width: 40%;
+    height: 82px;
+
+}
+#level-list .bronze-rank {
+    float: right;
+    margin-left:  auto;
+    margin-right: 5%;
+    margin-bottom: 90px;
+    background-color: rgb(163, 75, 53);
+}
+#level-list .silver-rank {
+    float: left;
+    margin-bottom: 90px;
+    margin-right:auto;
+    margin-left:  5%;
+    background-color: rgb(139, 139, 139);
+}
+#level-list .gold-rank {
+    margin-bottom: 20px;
+    max-width: 80%;
+    background-color: rgb(240, 255, 27);
+
+}
+
+#level-list > li > .avatar{
+display:block;
+float:left;
+margin-right:8px;
+position: relative;
+}
+
+#level-list > li > p {
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    line-height: 48px;
+    width: 35%;
+}
+
+#level-list > li > button, #level-list > li > img, #level-list > li > div{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    border: none;
+    align-self: right;
+    width: 48px; height: 48px;
+    background-color: Transparent;
+    background-size: 48px 48px;
+}
+
+
+#challenge-button {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/halloween-2476/64/swords-weapons-antique-fight-war-512.png");
+}
